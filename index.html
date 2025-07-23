@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <title>Vaibhavi's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Vaibhavi Bam</h1>
+        <p>Web Developer | Design Enthusiast</p>
+        
+       </header>
+    <nav>
+        <a href="#skills">Skills</a>
+         <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript (Basic)</li>
+      <li>GitHub</li>
+      <li>Canva</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    
+      <h3>Personal Portfolio Website</h3><hr width="100%">
+      <p>A simple responsive website to showcase my skills, projects, and contact info.</p>
+    <hr width="100%">
+    <br>
+    <br>
+      <h3>Mini Calculator (HTML/CSS/JS)</h3>
+      <p>A basic calculator that performs addition, subtraction, multiplication, and division.</p>
+       <div class="project-card">
+  <h3 style="cursor:pointer;" onclick="toggleCalculator()">Calculator (Click to open)</h3>
+  <div id="calculatorBox" style="display: none;">
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+
+    <select id="operation">
+      <option value="add">Add (+)</option>
+      <option value="subtract">Subtract (-)</option>
+      <option value="multiply">Multiply (×)</option>
+      <option value="divide">Divide (÷)</option>
+    </select>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <p id="result">Result: </p>
+  </div>
+    </div>
+  </section>
+  <section id="certificates">
+  <h2 class="section-title">📄 Certificates</h2>
+  <ul class="cert-list">
+    <li><a href="certificates/web-certificate.jpg" target="_blank">Web Development - IIT Fest</a></li>
+    
+    <li><a href="certificates/canva-cert.jpg" target="_blank">Canva Design Milestone</a></li>
+  </ul>
+</section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: <span id="email">bamvaibhavi@gmail.com</span> 
+      <button onclick="copyEmail()">Copy</button>
+    </p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Vaibhavi Bam</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
